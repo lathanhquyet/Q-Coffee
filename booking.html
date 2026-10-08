@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đặt bàn – Q-Coffee</title>
+  <meta name="description" content="Đặt bàn trước tại Q-Coffee: chọn ngày, giờ và số người.">
+  <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Q-Coffee – về Trang chủ"><img src="logo.svg" alt="Q-Coffee – Khơi nguồn sáng tạo"></a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav aria-label="Menu chính">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="booking.html" class="active" aria-current="page">Đặt bàn</a></li>
+          <li><a href="cart.html">Giỏ hàng <span class="badge" id="cart-count" hidden>0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section" style="padding-top:40px">
+    <div class="page-title" style="padding-top:0">
+      <p class="eyebrow">Đặt bàn</p>
+      <h1>Giữ chỗ cho buổi làm việc của bạn</h1>
+      <p>Điền thông tin bên dưới, Q-Coffee sẽ giữ bàn cho bạn. Nhận bàn trong khung giờ 7:00 – 21:00.</p>
+    </div>
+    <div class="split" style="align-items:start">
+      <div class="form-card" id="booking-card">
+        <form id="booking-form" novalidate>
+          <div class="form-grid">
+            <div class="field full"><label for="full_name">Họ và tên</label>
+              <input id="full_name" name="full_name" type="text" autocomplete="name" maxlength="100" required>
+              <p class="field-error" id="err-full_name"></p></div>
+            <div class="field"><label for="phone">Số điện thoại</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10 chữ số" maxlength="10" required>
+              <p class="field-error" id="err-phone"></p></div>
+            <div class="field"><label for="guests">Số người</label>
+              <input id="guests" name="guests" type="number" min="1" max="12" value="2" required>
+              <p class="field-error" id="err-guests"></p></div>
+            <div class="field"><label for="booking_date">Ngày</label>
+              <input id="booking_date" name="booking_date" type="date" required>
+              <p class="field-error" id="err-booking_date"></p></div>
+            <div class="field"><label for="booking_time">Giờ</label>
+              <input id="booking_time" name="booking_time" type="time" min="07:00" max="21:00" required>
+              <p class="field-error" id="err-booking_time"></p></div>
+            <div class="field full"><label for="note">Ghi chú (không bắt buộc)</label>
+              <textarea id="note" name="note" maxlength="500" placeholder="Ví dụ: cần bàn gần ổ cắm, khu yên tĩnh"></textarea>
+              <p class="field-error" id="err-note"></p></div>
+          </div>
+          <p style="margin-top:24px"><button class="btn btn-primary" id="booking-submit" type="submit">Đặt bàn</button></p>
+        </form>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=75" alt="Tách cà phê trên bàn gỗ trong quán Q-Coffee" loading="lazy" onerror="this.onerror=null;this.src='logo-icon.svg'">
+        <ul class="info-list" style="margin-top:24px">
+          <li><span>Giờ mở cửa</span><strong>7:00 – 22:00</strong></li>
+          <li><span>Địa chỉ</span><strong>80 đường số 4, Phường Thủ Đức, TP. Hồ Chí Minh</strong></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-logo" href="index.html"><img src="logo.svg" alt="Q-Coffee – Khơi nguồn sáng tạo"></a>
+        <p>Cà phê ngon, wifi mạnh, góc làm việc yên tĩnh cho người làm sáng tạo.</p>
+      </div>
+      <div>
+        <p class="footer-title">Liên kết nhanh</p>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="booking.html">Đặt bàn</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Liên hệ</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=80%20%C4%91%C6%B0%E1%BB%9Dng%20s%E1%BB%91%204%2C%20Ph%C6%B0%E1%BB%9Dng%20Th%E1%BB%A7%20%C4%90%E1%BB%A9c%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh" target="_blank" rel="noopener">80 đường số 4, Phường Thủ Đức, TP. Hồ Chí Minh</a></p>
+        <p><a href="mailto:lathanhquyet@gmail.com">lathanhquyet@gmail.com</a></p>
+        <p>Mở cửa 7:00 – 22:00 mỗi ngày</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Q-Coffee. Bảo lưu mọi quyền. Người sáng lập: Lã Thành Quyết.</p>
+        <p class="small">Ảnh minh họa từ Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

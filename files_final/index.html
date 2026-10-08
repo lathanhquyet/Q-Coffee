@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q-Coffee – Khơi nguồn sáng tạo</title>
+  <meta name="description" content="Q-Coffee: quán cà phê cho người làm sáng tạo. Xem menu, thêm món vào giỏ và đặt bàn trực tuyến.">
+  <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Q-Coffee – về Trang chủ"><img src="logo.svg" alt="Q-Coffee – Khơi nguồn sáng tạo"></a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav aria-label="Menu chính">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active" aria-current="page">Trang chủ</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="booking.html">Đặt bàn</a></li>
+          <li><a href="cart.html">Giỏ hàng <span class="badge" id="cart-count" hidden>0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <img class="hero-logo" src="logo.svg" alt="Q-Coffee">
+          <h1>Khơi nguồn <span>sáng tạo</span> từ từng ly cà phê</h1>
+          <p class="lead">Q-Coffee là quán cà phê dành cho người làm sáng tạo: cà phê đậm vị, wifi mạnh, ổ cắm ở mọi bàn và một góc yên tĩnh để ý tưởng được bắt đầu.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Xem menu</a>
+            <a class="btn btn-outline" href="booking.html">Đặt bàn</a>
+          </div>
+        </div>
+        <div class="hero-photo"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=75" alt="Không gian quán cà phê Q-Coffee với ánh sáng tự nhiên" onerror="this.onerror=null;this.src='logo-icon.svg'"></div>
+      </div>
+    </section>
+
+    <section class="section" id="featured-section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Được yêu thích</p><h2>Món nổi bật</h2></div></div>
+        <div id="featured" class="state">Đang tải món nổi bật…</div>
+      </div>
+    </section>
+
+    <section class="section" id="menu" style="background:#fff;border-block:1px solid var(--line)">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">Thực đơn</p><h2>Menu Q-Coffee</h2></div>
+          <div class="filters" id="filters" role="group" aria-label="Lọc theo nhóm món"></div>
+        </div>
+        <div id="menu-grid" class="state">Đang tải menu…</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Câu chuyện của chúng tôi</p>
+          <h2>Một góc làm việc cho người làm sáng tạo</h2>
+          <p class="muted">Q-Coffee bắt đầu từ một ý nghĩ đơn giản: ý tưởng hay thường đến khi ta thoải mái, có ly cà phê ngon bên cạnh và không phải lo hết pin hay mất sóng. Vì vậy mỗi bàn đều có ổ cắm, wifi luôn ổn định và âm nhạc đủ nhỏ để bạn tập trung.</p>
+          <a class="btn btn-outline" href="about.html">Về chúng tôi</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=75" alt="Khách làm việc và trò chuyện trong quán cà phê" loading="lazy" onerror="this.onerror=null;this.src='logo-icon.svg'">
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Q-Coffee trong vài con số">
+      <div class="container stats-grid">
+        <div><div class="stat-num">10</div><div class="stat-label">món trong menu</div></div>
+        <div><div class="stat-num">30</div><div class="stat-label">chỗ ngồi làm việc</div></div>
+        <div><div class="stat-num">7h – 22h</div><div class="stat-label">mở cửa mỗi ngày</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-logo" href="index.html"><img src="logo.svg" alt="Q-Coffee – Khơi nguồn sáng tạo"></a>
+        <p>Cà phê ngon, wifi mạnh, góc làm việc yên tĩnh cho người làm sáng tạo.</p>
+      </div>
+      <div>
+        <p class="footer-title">Liên kết nhanh</p>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="booking.html">Đặt bàn</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Liên hệ</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=80%20%C4%91%C6%B0%E1%BB%9Dng%20s%E1%BB%91%204%2C%20Ph%C6%B0%E1%BB%9Dng%20Th%E1%BB%A7%20%C4%90%E1%BB%A9c%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh" target="_blank" rel="noopener">80 đường số 4, Phường Thủ Đức, TP. Hồ Chí Minh</a></p>
+        <p><a href="mailto:lathanhquyet@gmail.com">lathanhquyet@gmail.com</a></p>
+        <p>Mở cửa 7:00 – 22:00 mỗi ngày</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Q-Coffee. Bảo lưu mọi quyền. Người sáng lập: Lã Thành Quyết.</p>
+        <p class="small">Ảnh minh họa từ Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

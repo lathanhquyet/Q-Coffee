@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giỏ hàng – Q-Coffee</title>
+  <meta name="description" content="Xem lại các món đã chọn, đổi số lượng hoặc xóa món khỏi giỏ hàng Q-Coffee.">
+  <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Q-Coffee – về Trang chủ"><img src="logo.svg" alt="Q-Coffee – Khơi nguồn sáng tạo"></a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav aria-label="Menu chính">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="booking.html">Đặt bàn</a></li>
+          <li><a href="cart.html" class="active" aria-current="page">Giỏ hàng <span class="badge" id="cart-count" hidden>0</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section" style="padding-top:40px">
+    <h1>Giỏ hàng</h1>
+    <div id="cart-root" class="state">Đang tải giỏ hàng…</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-logo" href="index.html"><img src="logo.svg" alt="Q-Coffee – Khơi nguồn sáng tạo"></a>
+        <p>Cà phê ngon, wifi mạnh, góc làm việc yên tĩnh cho người làm sáng tạo.</p>
+      </div>
+      <div>
+        <p class="footer-title">Liên kết nhanh</p>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="booking.html">Đặt bàn</a></li>
+          <li><a href="cart.html">Giỏ hàng</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Liên hệ</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=80%20%C4%91%C6%B0%E1%BB%9Dng%20s%E1%BB%91%204%2C%20Ph%C6%B0%E1%BB%9Dng%20Th%E1%BB%A7%20%C4%90%E1%BB%A9c%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh" target="_blank" rel="noopener">80 đường số 4, Phường Thủ Đức, TP. Hồ Chí Minh</a></p>
+        <p><a href="mailto:lathanhquyet@gmail.com">lathanhquyet@gmail.com</a></p>
+        <p>Mở cửa 7:00 – 22:00 mỗi ngày</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Q-Coffee. Bảo lưu mọi quyền. Chủ quán: Lã Thành Quyết.</p>
+        <p class="small">Ảnh minh họa từ Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
